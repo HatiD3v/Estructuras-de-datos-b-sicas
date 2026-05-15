@@ -63,15 +63,35 @@ void main() {
   //Ejercicios
   //Ejercicio 1 imprimir numeros del 1 al 10
   for (int i = 1; i <= 10; i++) {
+    //manualmente o humanamente tenemos el ciclo se inicia en 1 por cada iteracion incrementamos el ciclo en 1 +.
     print('Numero $i');
   }
 
   //Ejercicio 2 imprime numeros pares del 1 al 20
   for (int i = 1; i <= 20; i++) {
+    //Manualmente para imprimir numeros pares o impares tenemos el ciclo realizamos la iteracion en 1 con la condicion si i es menor o igual a 2 e incrementamos el bucle en 1+, tenemos la estructura condicional que valida si el numero que almacena la variable i tiene un residuo de 0 entonces es par y si no es impar
     if (i % 2 == 0) {
       print('numero par $i');
     } else {
       print('numero impar $i');
     }
+  }
+  //otra version
+  for (int i = 2; i <= 20; i += 2) {
+    print(i);
+  }
+
+  //Ejercicio 3 suma de numeros del 1 al 100
+  int suma = 0;
+  while (suma <= 100)
+    for (int i = 0; i <= 100; i++) {
+      suma += i;
+    }
+  print(suma);
+
+  //Ejercicio 4 tabla de multiplicar del 5
+  int multiplication = 5;
+  for (int i = 1; i <= 10; i++) {
+    print('$multiplication x $i = ${multiplication * i} ');
   }
 }
