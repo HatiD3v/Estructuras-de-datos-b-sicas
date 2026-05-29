@@ -94,4 +94,11 @@ void main() {
   for (int i = 1; i <= 10; i++) {
     print('$multiplication x $i = ${multiplication * i} ');
   }
+
+  //Funciones: son bloques de codigos reutilizables, estos sirven para evitar repetir logica
+  //Ejercicio1 crear una funcion que multiplique 2 numeros
+
+  //Ejercicio 2: crear función que determine si un número es par.
+
+  //Ejercicio 3: Crear función que calcule promedio.
 }
