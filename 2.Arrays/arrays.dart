@@ -28,4 +28,41 @@ void main() {
     }
   }
   print(contador);
+
+  //Agregar 3 elementos a un array vacio
+  List<dynamic> emptyArray = [];
+  emptyArray.add('Edwin');
+  emptyArray.add('Rosa');
+  emptyArray.add('Yanes');
+  print(emptyArray);
+  emptyArray.removeLast();
+  print(emptyArray);
+  emptyArray.insert(2, 12);
+  print(emptyArray);
+
+  //Buscar si un nombre existe en un array
+  for (var name in nombres) {
+    if (name.contains('Audry')) {
+      print('Nombre encontrado $name');
+    }
+  }
+
+  //invertir un array
+  List<int> numbers = [1, 2, 3, 4];
+  List<int> invertido = [];
+  for (int i = numbers.length - 1; i >= 0; i--) {
+    invertido.add(numbers[i]);
+  }
+  print(invertido);
+
+  //Eliminar duplicados
+  List<int> numeritos = [1, 1, 2, 2, 3];
+  List<int> resultado = [];
+
+  for (int numero in numeritos) {
+    if (!resultado.contains(numero)) {
+      resultado.add(numero);
+    }
+  }
+  print(resultado);
 }
