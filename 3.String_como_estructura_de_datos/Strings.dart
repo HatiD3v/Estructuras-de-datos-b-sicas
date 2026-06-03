@@ -24,4 +24,22 @@ void main() {
     }
   }
   print(contador);
+
+  //Invertir string
+  String programador = 'programador';
+  String invertido = '';
+  for (int i = programador.length - 1; i >= 0; i--) {
+    invertido += programador[i];
+  }
+  print(invertido);
+
+  //palindromo
+  String oso = 'reconocer';
+  String invertir = '';
+  for (int i = oso.length - 1; i >= 0; i--) {
+    invertir += oso[i];
+  }
+  print(oso == invertir);
+  print(oso);
+  print(invertir);
 }
