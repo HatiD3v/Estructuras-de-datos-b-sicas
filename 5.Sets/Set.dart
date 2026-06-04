@@ -36,4 +36,27 @@ void main() {
     }
   }
   print(isEmptySet);
+
+  //Ejercicio 5 encontrar interseccion entre [5,8,10,15] y [3,8,15,20]
+  //Primeramente que se refiere interseccion? es el punto donde dos elementos se cruzan. en este caso los elementos que aparecen en ambas listas
+  //Los paso que me dice mi logica y lo que haria manualmente
+  //Paso 1 definir 2 arrays
+  //Paso 2 Transformar una de las listas en un set
+  //Paso 3 definir lista vacia
+  //Paso 4 definir un bucle
+  //Paso 5 iterar en la lista que no esta transformada
+  //Paso 6 definir una estructura condicional
+  //Paso 7 validar si el set contiene el numero de la segunda lista
+  //Paso 8 si lo tiene se agrega ese numero al resultado
+  //Paso 9 la salida de la interseccion
+  List<int> interseccionA = [5, 8, 10, 15];
+  List<int> interseccionB = [3, 8, 15, 20];
+  Set<int> setA = interseccionA.toSet();
+  List<int> result = [];
+  for (var num in interseccionB) {
+    if (setA.contains(num)) {
+      result.add(num);
+    }
+  }
+  print(result);
 }
