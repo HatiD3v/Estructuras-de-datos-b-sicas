@@ -59,4 +59,38 @@ void main() {
     }
   }
   print(result);
+
+  //mini reto dada 2 listas
+  /**
+   * 
+  Realiza:
+    Eliminar duplicados de ambas listas.
+    Encontrar la intersección.
+    Verificar si existe el número 5.
+    Agregar el número 10.
+    Eliminar el número 1.
+   */
+
+  List<int> lista1 = [1, 2, 2, 3, 4];
+
+  List<int> lista2 = [3, 4, 4, 5, 6];
+
+  Set<int> toset1 = lista1.toSet();
+  Set<int> toset2 = lista2.toSet();
+  print(toset1);
+  print(toset2);
+  List<int> resultadoInterseccion = [];
+  for (var num in lista2) {
+    if (toset1.contains(num)) {
+      resultadoInterseccion.add(num);
+    }
+  }
+  print(resultadoInterseccion);
+
+  print(toset1.contains(5));
+  print(toset2.contains(5));
+  print(toset1.add(10));
+  print(toset2.add(10));
+  print(toset1.remove(1));
+  print(toset2.remove(1));
 }
