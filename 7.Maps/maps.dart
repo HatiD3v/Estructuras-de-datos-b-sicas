@@ -7,4 +7,10 @@ void main() {
   //Ejercico 2 dado {"Pan": 2,"Leche": 3,"Huevos": 5} obten el precio de huevos
   Map<String, int> precios = {"Pan": 2, "Leche": 3, "Huevos": 5};
   print(precios['Huevos']);
+
+  //Ejercicio 3 eliminar carlos del primer map por key
+  usuarios.remove('Carlos');
+  print(usuarios);
+
+  //Ejercicio 4 Calcular la frecuencia de [5, 5, 5, 2, 2, 8]
 }
