@@ -13,4 +13,15 @@ void main() {
   print(usuarios);
 
   //Ejercicio 4 Calcular la frecuencia de [5, 5, 5, 2, 2, 8]
+  List<int> numeros = [5, 5, 5, 2, 2, 8];
+  Map<int, int> frecuencia = {};
+
+  for (var num in numeros) {
+    if (frecuencia.containsKey(num)) {
+      frecuencia[num] = frecuencia[num]! + 1;
+    } else {
+      frecuencia[num] = 1;
+    }
+  }
+  print(frecuencia);
 }
