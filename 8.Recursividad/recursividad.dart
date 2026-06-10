@@ -12,7 +12,14 @@ void main() {
   // formula: f(n) = f(n - 1) + f(n - 2)
   print(fibonacci(5));
 
-  //Ejericcio 3
+  //Ejericcio 3 escribir funcion recursiva que escriba numeros en conteo regresivo desde el 5 al 1
+  print(cuentaRegresiva(5));
+
+  //Ejercici 4 suma recursiva
+  print(sumaRecursiva(1));
+
+  List<int> sumaArray = [10, 20, 30, 40];
+  print(sumaList(sumaArray));
 }
 
 int factorial(int fact) {
@@ -30,4 +37,27 @@ int fibonacci(int n) {
     return 1;
   }
   return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+int cuentaRegresiva(int n) {
+  if (n == 1) {
+    return 1;
+  }
+  print(n);
+  return cuentaRegresiva(n - 1);
+}
+
+int sumaRecursiva(int n) {
+  if (n == 10) {
+    return 10;
+  }
+  print(n);
+  return sumaRecursiva(n + 1);
+}
+
+int sumaList(List<int> n) {
+  if (n.isEmpty) {
+    return 0;
+  }
+  return n.first + sumaList(n.sublist(1));
 }
